@@ -1,3 +1,3 @@
-linha-cobol-producao-1
-linha-cobol-producao-2
-linha-cobol-producao-3
+linha-main-cobol-1
+linha-main-cobol-2
+linha-main-cobol-3
