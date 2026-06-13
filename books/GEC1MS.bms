@@ -1,4 +1,4 @@
-GEC1MS  DFHMSD CTRL=(FREEKB),                                          - versao main
+GEC1MS  DFHMSD CTRL=(FREEKB),  versao main                             - 
                LANG=COBOL,                                             -
                MODE=INOUT,                                             -
                STORAGE=AUTO,                                           -
