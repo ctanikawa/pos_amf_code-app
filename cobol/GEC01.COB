@@ -7,7 +7,7 @@
       alterado no github 13062025 1115 - alterei no notebook2
       ******************************************************************
       *                                                                *
-      *                     M E N U  - alterei aqui                    *
+      *                     M E N U  - alterei aqui   main             *
       *                                                                *
       ******************************************************************
       * TRANSACAO = GEC1                         TIPO PROGRAMOTECA: 53 *
