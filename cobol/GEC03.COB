@@ -6,7 +6,7 @@
 
       ******************************************************************
       *                                                                *
-      *              PAGINACAO DA PESQUISA                             *
+      *              PAGINACAO DA PESQUISA - versão main               *
       *                                                                *
       ******************************************************************
       * TRANSACAO = GEC3                         TIPO PROGRAMOTECA: 53 *
