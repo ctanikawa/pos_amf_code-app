@@ -3,7 +3,6 @@
        AUTHOR.          STEFANINI.
        DATE-WRITTEN.    MARCO/2008.
        SECURITY.
-      git diff --name-only --diff-filter=U
       ******************************************************************
       *                                                                *
       *                     M E N U  - versao main                     *
