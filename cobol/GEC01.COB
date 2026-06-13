@@ -3,7 +3,7 @@
        AUTHOR.          STEFANINI.
        DATE-WRITTEN.    MARCO/2008.
        SECURITY.
-      alterado no github 13062025 1115
+      alterado no github 13062025 1115 - alterei no notebook
       ******************************************************************
       *                                                                *
       *                     M E N U                                    *
