@@ -1,4 +1,4 @@
-GEC3MS  DFHMSD CTRL=(FREEKB),                                          -
+GEC3MS  DFHMSD CTRL=(FREEKB),         versao main                      -
                LANG=COBOL,                                             -
                MODE=INOUT,                                             -
                STORAGE=AUTO,                                           -
@@ -12,7 +12,7 @@ GEC3M1  DFHMDI SIZE=(24,80)
         DFHMDF ATTRB=(ASKIP,BRT),                                      -
                LENGTH=44,                                              -
                POS=(1,15),                                             -
-               INITIAL='GE - Gerenciamento de EscritÛrio de CobranÁa' 
+               INITIAL='GE - Gerenciamento de Escrit√≥rio de Cobran√ßa' 
         DFHMDF ATTRB=(ASKIP,NORM),                                     -
                LENGTH=5,                                               -
                POS=(1,63),                                             -
@@ -36,7 +36,7 @@ T1HORA  DFHMDF ATTRB=(ASKIP,BRT,FSET),                                 -
                ================================' 
         DFHMDF LENGTH=74,                                              -
                POS=(5,1),                                              -
-               INITIAL='Data/Hora  Usu·rio/Nome        Evento Entidade -
+               INITIAL='Data/Hora  Usu√°rio/Nome        Evento Entidade -
                  Campo      Anterior/Atual' 
 T1DATA1 DFHMDF ATTRB=(ASKIP,FSET,NORM),                                -
                LENGTH=10,                                              -
@@ -192,7 +192,7 @@ T1ATUA5 DFHMDF ATTRB=(ASKIP,FSET,NORM),                                -
                INITIAL='Ant' 
         DFHMDF LENGTH=4,                                               -
                POS=(23,51),                                            -
-               INITIAL='PrÛx' 
+               INITIAL='Pr√≥x' 
         DFHMDF LENGTH=4,                                               -
                POS=(23,76),                                            -
                INITIAL='Sair' 
