@@ -3,8 +3,7 @@
        AUTHOR.          STEFANINI.
        DATE-WRITTEN.    MARCO/2008.
        SECURITY.
-      alterado no github 13062025 1117
-      alterado no github 13062025 1115 - alterei no notebook2
+      git diff --name-only --diff-filter=U
       ******************************************************************
       *                                                                *
       *                     M E N U  - versao main                     *
