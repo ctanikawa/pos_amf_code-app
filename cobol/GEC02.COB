@@ -6,7 +6,7 @@
 
       ******************************************************************
       *                                                                *
-      *              DIGITACAO DA CHAVE DE BUSCA                       *
+      *              DIGITACAO DA CHAVE DE BUSCA - versao main         *
       *                                                                *
       ******************************************************************
       * TRANSACAO = GEC2                         TIPO PROGRAMOTECA: 53 *
@@ -131,7 +131,7 @@
 
            03      MN-MENS4004.
              05    FILLER          PIC      X(49)  VALUE
-                   'DIGITE AS INFORMA«OES PARA PESQUISA E TECLE ENTER'.
+                   'DIGITE AS INFORMA√áOES PARA PESQUISA E TECLE ENTER'.
 
            03      MN-MENS4005.
              05    FILLER          PIC      X(19)  VALUE
@@ -143,7 +143,7 @@
 
            03      MN-MENS4007.
              05    FILLER          PIC      X(38)  VALUE
-                   'CAMPO INV¡LIDO, REDIGITE A INFORMA«√O'.
+                   'CAMPO INV√ÅLIDO, REDIGITE A INFORMA√á√ÉO'.
 
            03      MN-MENS4008.
              05    FILLER          PIC      X(47)  VALUE
@@ -316,13 +316,13 @@
                     MOVE   'Empresa'        TO     T1LOGATO
            ELSE
              IF     GXXXE-OPCAO   EQUAL     LT-02
-                    MOVE   'Regi„o'         TO     T1LOGATO
+                    MOVE   'Regi√£o'         TO     T1LOGATO
              ELSE
                IF   GXXXE-OPCAO   EQUAL     LT-03
                     MOVE   'Fase'           TO     T1LOGATO
                ELSE
                  IF GXXXE-OPCAO   EQUAL     LT-04
-                    MOVE   'EscritÛrio'     TO     T1LOGATO
+                    MOVE   'Escrit√≥rio'     TO     T1LOGATO
                  ELSE
                     MOVE   'NAO PREVISTO'   TO     T1LOGATO
                  END-IF
