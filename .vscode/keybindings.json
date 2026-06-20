@@ -1,0 +1,7 @@
+[
+  {
+    "key": "ctrl+alt+shift+c",
+    "command": "editor.action.toggleColumnSelection",
+    "when": "editorTextFocus"
+  }
+]
