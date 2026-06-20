@@ -314,7 +314,18 @@
 
        C-TRATA-DEMAIS-VEZES-FIM.
            EXIT.
-
+           IF      EIBAID  EQUAL  DFHENTER
+                   PERFORM CA-TRATA-ENTER
+           ELSE
+              IF   EIBAID  EQUAL  DFHCLEAR OR DFHPF12
+                   MOVE    MN-MENS4005    TO     T1MENSAO
+                   PERFORM WB-ENVIA-MENSAGEM
+              ELSE
+                   MOVE    -1             TO     T1OPCAOL
+                   MOVE    MN-MENS4006    TO     T1MENSAO
+                   PERFORM WA-ENVIA-TELA
+              END-IF
+           END-IF.
        CA-TRATA-ENTER              SECTION.
       ******************************************************************
       * TRATA A TECLA ENTER                                            *
