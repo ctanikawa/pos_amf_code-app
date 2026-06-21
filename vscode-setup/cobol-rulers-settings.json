@@ -1,0 +1,13 @@
+{
+  "[cobol]": {
+    "editor.rulers": [8, 12, 72, 80],
+    "editor.wordWrap": "off",
+    "editor.formatOnSave": false,
+    "files.trimTrailingWhitespace": false,
+    "editor.tabSize": 4,
+    "editor.insertSpaces": false
+  },
+  "[plaintext]": {
+    "editor.rulers": [8, 12, 72, 80]
+  }
+}
