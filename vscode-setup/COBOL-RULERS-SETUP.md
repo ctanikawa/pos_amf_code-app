@@ -5,7 +5,6 @@
 As linhas verticais (rulers) marcam as colunas importantes no formato fixo COBOL:
 
 - **Coluna 8**: Início da Área A (DIVISIONS, SECTIONS, PARAGRAPHS)
-- **Coluna 12**: Início da Área B (STATEMENTS, WORKING-STORAGE items)
 - **Coluna 72**: Fim da Área B (limite de código útil)
 - **Coluna 80**: Fim da linha (cartão perfurado original de 80 caracteres)
 
@@ -19,7 +18,8 @@ As linhas verticais (rulers) marcam as colunas importantes no formato fixo COBOL
 2. Procure por: `"editor.rulers"`
 3. Na seção `[cobol]` (ou crie uma), configure:
    ```json
-   "editor.rulers": [8, 12, 72, 80]
+  "editor.rulers": [8, 72, 80],
+  "coboleditor.margin": false
    ```
 4. Pressione Enter
 5. As linhas devem aparecer imediatamente
@@ -33,7 +33,8 @@ As linhas verticais (rulers) marcam as colunas importantes no formato fixo COBOL
 3. Procure pela seção `[cobol]` ou crie uma:
    ```json
    "[cobol]": {
-     "editor.rulers": [8, 12, 72, 80],
+    "editor.rulers": [8, 72, 80],
+    "coboleditor.margin": false,
      "editor.wordWrap": "off",
      "editor.formatOnSave": false,
      "files.trimTrailingWhitespace": false,
@@ -71,7 +72,7 @@ cp cobol-rulers-settings.json \
 
 ```json
 "[cobol]": {
-  "editor.rulers": [8, 12, 72, 80],
+  "editor.rulers": [8, 72, 80],
   "editor.rulerColor": "#FF6B6B"
 }
 ```
@@ -80,10 +81,11 @@ cp cobol-rulers-settings.json \
 
 ```json
 "[cobol]": {
-  "editor.rulers": [8, 12, 72, 80]
+  "editor.rulers": [8, 72, 80],
+  "coboleditor.margin": false
 },
 "[cobol-variable-length]": {
-  "editor.rulers": [12, 120]
+  "editor.rulers": [72, 80]
 }
 ```
 
@@ -93,7 +95,8 @@ cp cobol-rulers-settings.json \
 
 ```json
 "[cobol]": {
-  "editor.rulers": [8, 12, 72, 80],
+  "editor.rulers": [8, 72, 80],
+  "coboleditor.margin": false,
   "editor.wordWrap": "off",
   "editor.formatOnSave": false,
   "files.trimTrailingWhitespace": false,

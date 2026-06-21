@@ -2,11 +2,7 @@
   "git.mergeEditor": true,
   "editor.hover.enabled": "on",
   "editor.renderWhitespace": "all",
-  "editor.rulers": [
-    { "column": 36, "color": "#ff7f50" },
-    { "column": 40, "color": "#ff7f50" },
-    { "column": 72, "color": "#ff0000" }
-  ],
+  "editor.rulers": [7, 71, 79],
   "files.associations": {
     "*.COB": "cobol",
     "*.cob": "cobol",
@@ -16,5 +12,9 @@
     "*.cpy": "cobol",
     "*.BMS": "cobol",
     "*.bms": "cobol"
+  },
+  "[cobol]": {
+    "editor.rulers": [7, 71, 79],
+    "coboleditor.margin": false
   }
 }

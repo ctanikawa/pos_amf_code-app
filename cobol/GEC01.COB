@@ -193,11 +193,10 @@
           03       DFHUNFNN            PIC   X(001)   VALUE   'J'.
       *--         (UNPROT,FSET,NORM,NUM)
 
-          03       DFHUNFSN            PIC   X(001)   VALUE   'A'.
+          03       DFHUNFSN            PIC   X(001)   VALUE   'A'.             
       *--         (UNPROT,FSET,NORM)
 
       *----------------------------------------------------------------*
-sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
            COPY        DFHAID.
       *
            COPY        GXXXEWR1.
