@@ -1,6 +1,6 @@
 {
   "[cobol]": {
-    "editor.rulers": [7, 71, 79],
+    "editor.rulers": [7, 11, 71, 79],
     "coboleditor.margin": false,
     "editor.wordWrap": "off",
     "editor.formatOnSave": false,
@@ -9,6 +9,6 @@
     "editor.insertSpaces": false
   },
   "[plaintext]": {
-    "editor.rulers": [7, 71, 79]
+    "editor.rulers": [7, 11, 71, 79]
   }
 }
