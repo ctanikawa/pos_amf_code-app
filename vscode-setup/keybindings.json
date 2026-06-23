@@ -3,10 +3,5 @@
     "key": "shift+alt+c",
     "command": "editor.action.toggleColumnSelection",
     "when": "textInputFocus"
-  },
-  {
-    "key": "ctrl+shift+8",
-    "command": "editor.action.toggleColumnSelection",
-    "when": "textInputFocus"
   }
 ]
