@@ -2,7 +2,7 @@
   "git.mergeEditor": true,
   "editor.hover.enabled": "on",
   "editor.renderWhitespace": "all",
-  "editor.rulers": [7, 11, 71, 79],
+  "editor.rulers": [7, 11, 72, 80],
   "files.associations": {
     "*.COB": "cobol",
     "*.cob": "cobol",
@@ -14,7 +14,13 @@
     "*.bms": "cobol"
   },
   "[cobol]": {
-    "editor.rulers": [7, 11, 71, 79],
+    "editor.rulers": [7, 11, 72, 80],
     "coboleditor.margin": false
-  }
+  },
+  "editor.cursorStyle": "line",
+  "editor.cursorBlinking": "solid",
+  "overtype.defaultMode": 0,
+  "overtype.abbreviatedStatus": true,
+  "overtype.perEditor": true,
+  "overtype.secondaryCursorStyle": "block"
 }

@@ -24,30 +24,6 @@ Programar uma combinação de teclas para ativar/desativar rapidamente o modo de
 4. Cole no seu arquivo de keybindings do VS Code
 5. Salve e pronto!
 
-### **Opção 2: Configuração Manual**
-
-1. Pressione `Ctrl+Shift+P`
-2. Digite: `"Preferences: Open Keyboard Shortcuts (JSON)"`
-3. Procure e adicione a entrada abaixo:
-
-```json
-{
-  "key": "ctrl+alt+c",
-  "command": "coboleditor.togglemargin",
-  "when": "editorLangId == cobol"
-}
-```
-
-ou
-
-```json
-{
-  "key": "alt+m",
-  "command": "coboleditor.togglemargin",
-  "when": "editorLangId == cobol"
-}
-```
-
 ---
 
 ## ✅ Testando
