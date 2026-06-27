@@ -52,7 +52,7 @@
       *                         LITERAIS                               *        
       ******************************************************************        
        01          FILLER.                                                      
-           03      FILLER          PIC      X(gg)  VALUE 'LITERAIS'.            
+           03      FILLER          PIC      X(08)  VALUE 'LITERAIS'.            
            03      LT-00           PIC      9(02)  VALUE 00.                    
            03      LT-01           PIC      9(02)  VALUE 01.                    
            03      LT-02           PIC      9(02)  VALUE 02.                    
@@ -111,7 +111,7 @@
              05    FILLER          PIC      X(13)  VALUE                        
                    ' - COD.RET.: '.                                             
              05    MN-CODRET-3     PIC      9(02).                              
-             05    FILLER          PIC      X(gg)  VALUE ' - PTO: '.            
+             05    FILLER          PIC      X(08)  VALUE ' - PTO: '.            
              05    MN-PTO-ERRO-3   PIC      9(02).                              
              05    FILLER          PIC      X(05)  VALUE ' CHV='.               
              05    MN-CHAVE-3      PIC      X(150).                             
@@ -150,7 +150,7 @@
            03      WS-ABSTIME      PIC     S9(15)  VALUE +0      COMP-3.        
                                                                                 
            03      WS-MENS-CSMT    PIC      X(200) VALUE  SPACES.               
-           03      WS-MENS-CSMT-1  PIC      X(ggg) VALUE  SPACES.               
+           03      WS-MENS-CSMT-1  PIC      X(200) VALUE  SPACES.               
            03      WS-MENS-CSMT-2  PIC      X(200) VALUE  SPACES.               
                                                                                 
            COPY        GEC1MS.                                                  
