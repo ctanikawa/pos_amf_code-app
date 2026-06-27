@@ -1,0 +1,11 @@
+# Enforce LF line endings for COBOL and BMS sources in repo and working tree.
+*.COB  text eol=lf
+*.cob  text eol=lf
+*.CBL  text eol=lf
+*.cbl  text eol=lf
+*.COPY text eol=lf
+*.copy text eol=lf
+*.CPY  text eol=lf
+*.cpy  text eol=lf
+*.BMS  text eol=lf
+*.bms  text eol=lf

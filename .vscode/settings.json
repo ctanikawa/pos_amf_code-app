@@ -3,6 +3,8 @@
   "editor.hover.enabled": "on",
   "editor.renderWhitespace": "all",
   "editor.rulers": [7, 11, 72, 80],
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
   "files.associations": {
     "*.COB": "cobol",
     "*.cob": "cobol",
@@ -15,12 +17,13 @@
   },
   "[cobol]": {
     "editor.rulers": [7, 11, 72, 80],
-    "coboleditor.margin": false
+    "coboleditor.margin": false,
+    "editor.wordWrap": "bounded",
+    "editor.wordWrapColumn": 80,
+    "files.eol": "\n",
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": false
   },
   "editor.cursorStyle": "line",
-  "editor.cursorBlinking": "solid",
-  "overtype.defaultMode": 0,
-  "overtype.abbreviatedStatus": true,
-  "overtype.perEditor": true,
-  "overtype.secondaryCursorStyle": "block"
+  "editor.cursorBlinking": "solid"
 }
