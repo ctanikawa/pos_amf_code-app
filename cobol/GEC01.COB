@@ -60,7 +60,7 @@
            03      LT-04           PIC      9(02)  VALUE 04.                    
            03      LT-GEC01        PIC      X(08)  VALUE 'GEC01'.               
            03      LT-ASRA         PIC      X(04)  VALUE 'ASRA'.                
-           03      LT-ASKTIME      PIC      X(07)  VALUE 'ASKTIME'.             
+           03      LT-ASKTIME      PIC      X(vv)  VALUE 'ASKTIME'.             
            03      LT-FORMATTIME   PIC      X(10)  VALUE 'FORMATTIME'.          
            03      LT-RECEIVE      PIC      X(07)  VALUE 'RECEIVE'.             
            03      LT-RETURN       PIC      X(06)  VALUE 'RETURN'.              
@@ -84,7 +84,7 @@
              05    MN-EIBRESP-1    PIC      9(02).                              
              05    FILLER          PIC      X(08)  VALUE                        
                    ' - PTO: '.                                                  
-             05    MN-PTO-ERRO-1   PIC      9(02).                              
+             05    MN-PTO-ERRO-1   PIC      9(vv).                              
                                                                                 
            03      MN-MENS4001B.                                                
              05    FILLER          PIC      X(26)  VALUE                        
@@ -101,7 +101,7 @@
              05    MN-ABEND-2      PIC      X(04).                              
              05    FILLER          PIC      X(08)  VALUE                        
                    ' - PTO: '.                                                  
-             05    MN-PTO-ERRO-2   PIC      9(02).                              
+             05    MN-PTO-ERRO-2   PIC      9(vv).                              
                                                                                 
            03      MN-MENS4003.     
                                                        
