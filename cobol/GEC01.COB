@@ -2,7 +2,9 @@
        PROGRAM-ID.      GEC01.                                                  
        AUTHOR.          STEFANINI.                                              
        DATE-WRITTEN.    MARCO/2008.                                             
-       SECURITY.                                                                
+       SECURITY. 
+      ******************************************************************
+      * gerei esta diferenca para aprender a retira-las                *
       ******************************************************************        
       ***  editado no github                                        ***         
       ******************************************************************        
