@@ -2,8 +2,7 @@
   "[cobol]": {
     "editor.rulers": [7, 11, 72, 80],
     "coboleditor.margin": false,
-    "editor.wordWrap": "bounded",
-    "editor.wordWrapColumn": 80,
+    "editor.wordWrap": "off",
     "editor.formatOnSave": false,
     "files.eol": "\n",
     "files.insertFinalNewline": true,

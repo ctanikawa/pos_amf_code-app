@@ -101,7 +101,8 @@
                    ' - PTO: '.                                                  
              05    MN-PTO-ERRO-2   PIC      9(02).                              
                                                                                 
-           03      MN-MENS4003.                                                 
+           03      MN-MENS4003.     
+                                                       
              05    FILLER          PIC      X(29)  VALUE                        
                    'GE0003I GEC01 I4003 ERRO API '.                             
              05    MN-API-3        PIC      X(07).                              
