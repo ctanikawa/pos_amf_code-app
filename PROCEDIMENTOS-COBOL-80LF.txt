@@ -1,0 +1,86 @@
+PROCEDIMENTOS - PADRAO COBOL/BMS (80 COLUNAS + LF)
+
+Objetivo
+- Garantir que arquivos COBOL/BMS fiquem com:
+  1) quebra de linha LF
+  2) exatamente 80 caracteres por linha
+
+Pre-requisitos
+- Executar na raiz do repositorio corporativo.
+- Ter Git instalado e permissao de push.
+- Se existir, usar o script scripts/normalize_cobol_80lf.sh.
+
+Passo a passo rapido
+1) Configurar Git local para LF:
+   git config --local core.autocrlf false
+   git config --local core.eol lf
+   git config --local core.safecrlf warn
+
+2) Normalizar COBOL/BMS (se o script existir):
+   bash scripts/normalize_cobol_80lf.sh .
+
+3) Validar padrao:
+   - Sem CRLF
+   - Todas as linhas COBOL/BMS com 80 caracteres
+
+4) Verificar status:
+   git status --short
+
+5) Commit e push (somente se houver mudancas):
+   git add .
+   git commit -m "Padroniza COBOL/BMS em 80 colunas e LF"
+   git push
+
+Comando unico (bash)
+Copie e execute o bloco abaixo na raiz do repo:
+
+# 1) Git local em LF
+git config --local core.autocrlf false
+git config --local core.eol lf
+git config --local core.safecrlf warn
+
+# 2) (Opcional) normalizar COBOL/BMS para 80+LF, se o script ja existir
+if [ -f scripts/normalize_cobol_80lf.sh ]; then
+  bash scripts/normalize_cobol_80lf.sh .
+fi
+
+# 3) Validar CRLF e tamanho de linha
+echo "=== CRLF check ==="
+crlf_found=0
+while IFS= read -r f; do
+  if grep -q $'\r' "$f"; then
+    echo "CRLF: $f"
+    crlf_found=1
+  fi
+done < <(git ls-files | grep -E '\.(COB|cob|CBL|cbl|COPY|copy|CPY|cpy|BMS|bms)$')
+
+echo "=== 80 cols check ==="
+len_found=0
+while IFS= read -r f; do
+  if ! awk 'length($0)!=80 {print FILENAME ":" NR ":" length($0); bad=1} END{exit bad?1:0}' "$f"; then
+    len_found=1
+  fi
+done < <(git ls-files | grep -E '\.(COB|cob|CBL|cbl|COPY|copy|CPY|cpy|BMS|bms)$')
+
+# 4) Status final
+echo "=== git status ==="
+git status --short
+
+# 5) Commit/push se houver mudanca
+if [ "$crlf_found" -eq 0 ] && [ "$len_found" -eq 0 ]; then
+  if [ -n "$(git status --porcelain)" ]; then
+    git add .
+    git commit -m "Padroniza COBOL/BMS em 80 colunas e LF"
+    git push
+  else
+    echo "Sem mudancas locais para commit."
+  fi
+else
+  echo "Falhou validacao. Corrija antes de commit/push."
+fi
+
+Checklist final
+- VS Code mostra LF no canto inferior direito.
+- Sem arquivos com CRLF.
+- Validacao 80 colunas passou.
+- Workflow de formato no GitHub ativo e verde.
