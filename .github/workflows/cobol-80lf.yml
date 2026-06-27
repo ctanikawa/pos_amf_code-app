@@ -1,0 +1,51 @@
+name: COBOL 80 Cols + LF
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+
+jobs:
+  validate-cobol-format:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate COBOL/BMS lines are exactly 80 chars and LF
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          files=$(find . -type f \( -name "*.COB" -o -name "*.cob" -o -name "*.CBL" -o -name "*.cbl" -o -name "*.COPY" -o -name "*.copy" -o -name "*.CPY" -o -name "*.cpy" -o -name "*.BMS" -o -name "*.bms" \))
+
+          if [[ -z "${files}" ]]; then
+            echo "No COBOL/BMS files found."
+            exit 0
+          fi
+
+          failed=0
+
+          while IFS= read -r file; do
+            # Reject CRLF by checking for CR bytes.
+            if LC_ALL=C grep -q $'\r' "$file"; then
+              echo "CRLF found: $file"
+              failed=1
+            fi
+
+            # Each line must have exactly 80 characters.
+            if awk 'length($0)!=80 {print FILENAME ":" NR ":" length($0); bad=1} END{exit bad?1:0}' "$file"; then
+              :
+            else
+              echo "Invalid line length(s) in: $file"
+              failed=1
+            fi
+          done <<< "$files"
+
+          if [[ "$failed" -ne 0 ]]; then
+            echo "COBOL/BMS formatting validation failed."
+            exit 1
+          fi
+
+          echo "COBOL/BMS formatting validation passed."
