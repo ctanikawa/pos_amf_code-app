@@ -49,8 +49,7 @@
       ******************************************************************
        01          FILLER.
            03      FILLER          PIC      X(08)  VALUE 'LITERAIS'.
-           03      LT-01           PIC      9(02)  VALUE 01.
-           03      LT-05           PIC      9(02)  VALUE 05.
+           03      LT-00           PIC      9(02)  VALUE 00.
            03      LT-01           PIC      9(02)  VALUE 01.
            03      LT-02           PIC      9(02)  VALUE 02.
            03      LT-03           PIC      9(02)  VALUE 03.
