@@ -5,7 +5,7 @@
        SECURITY.
       ******************************************************************
       *                                                                *
-      *                     M E N U   alterado no github.              *
+      *                     M E N U   alterado no vscode2              *
       *                                                                *
       ******************************************************************
       * TRANSACAO = GEC1                         TIPO PROGRAMOTECA: 53 *
